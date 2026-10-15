@@ -26,7 +26,7 @@ The system is divided into three main components:
 
 These components were developed as parts of the same project. The portfolio versions have had sensitive configuration replaced with placeholders, so the complete system is not expected to work without additional setup.
 
-## 1. Android Application
+## 1. Android Application (File name: Android)
 
 The Android application provides the user-facing mobile interface.
 
@@ -44,7 +44,7 @@ Features documented in the project include:
 
 The project can be opened in Android Studio. Gradle dependencies and API configuration may need to be reviewed before running it.
 
-## 2. Python Smart Home System
+## 2. Python Smart Home System (File name: Smartproject)
 
 The Python component supports the background tasks and integrations used by the wider smart home system.
 
@@ -64,7 +64,7 @@ The wider project also covers electricity-pricing data retrieval, analysis of pr
 
 Running the system may require additional dependencies, compatible hardware, device credentials and a configured database or backend.
 
-## 3. Node.js Backend API
+## 3. Node.js Backend API (File Name: Heliohost API)
 
 The Node.js backend provides server-side endpoints used by the wider application.
 
