@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.smart_plug_application.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+
+    <!-- Action to navigate to PricingDetailsFragment -->
+    <action
+        android:id="@+id/action_homeFragment_to_pricingDetailsFragment"
+        app:destination="@id/navigation_pricingdetails" />
+
+        <!-- Action to navigate to AnalyticalInfoFragment -->
+    <action
+        android:id="@+id/action_homeFragment_to_analyticalInfoFragment"
+        app:destination="@id/navigation_analyticalinfo" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.smart_plug_application.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+
+
+    <!-- Action to navigate to DeviceSchedulesFragment -->
+    <action
+        android:id="@+id/action_dashboardFragment_to_deviceSchedulesFragment"
+        app:destination="@id/navigation_deviceschedules" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.smart_plug_application.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_pricingdetails"
+        android:name="com.example.smart_plug_application.ui.home.PricingDetailsFragment"
+        android:label="Pricing Details"
+        tools:layout="@layout/fragment_pricingdetails" />
+
+    <fragment
+        android:id="@+id/navigation_deviceschedules"
+        android:name="com.example.smart_plug_application.ui.dashboard.DeviceSchedulesFragment"
+        android:label="Device Schedules"
+        tools:layout="@layout/fragment_deviceschedules" />
+
+    <fragment
+        android:id="@+id/navigation_analyticalinfo"
+        android:name="com.example.smart_plug_application.ui.home.AnalyticalInfoFragment"
+        android:label="Analytical Information"
+        tools:layout="@layout/fragment_analytical_info" />
+
+</navigation>

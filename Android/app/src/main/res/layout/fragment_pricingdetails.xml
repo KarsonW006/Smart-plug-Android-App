@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.PricingDetailsFragment">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Today and Tomorrow Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnToday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Today" />
+
+            <Button
+                android:id="@+id/btnTomorrow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Tomorrow" />
+        </LinearLayout>
+
+
+        <!-- Header Row for Period and Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- First Period and Price headers for columns 1 and 2 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Period"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Price (p/kWh)"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- Second Period and Price headers for columns 3 and 4 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Period"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Price (p/kWh)"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- RecyclerView for Pricing Details -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPricingDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="35dp"/>
+
+        <!-- Message when no data available -->
+        <TextView
+            android:id="@+id/noDataMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit rates not available yet. We normally get these at around 4:30pm today. Please try again in couple of hours."
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="16dp" />
+    </LinearLayout>
+
+</FrameLayout>
