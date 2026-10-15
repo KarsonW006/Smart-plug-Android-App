@@ -109,8 +109,6 @@ The API also depends on a compatible database schema, including tables or views 
 
 ## Setup and Limitations
 
-This repository brings together portfolio documentation for the three components of the Smart Plug project.
-
 The cleaned project copies do not include the original online database credentials or live backend configuration. Some functionality will therefore require additional configuration before it can be demonstrated.
 
 Before running the projects:
@@ -124,10 +122,6 @@ Before running the projects:
 The projects have not been independently built, run or tested as part of preparing these portfolio copies. Live functionality should not be assumed.
 
 ## Security Considerations
-
-Security is important when working with applications that handle user accounts, databases and connected devices.
-
-The portfolio copies use placeholders instead of the original sensitive configuration. However, this should not be treated as a guarantee that every possible secret has been removed.
 
 Before public release or deployment:
 
